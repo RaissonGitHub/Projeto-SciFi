@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #010440;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    margin-left: 85px; /* Adicionei 85px de margem esquerda */
+}
+
+.nav-link {
+    color: #FFFFFF;
+    margin-right: 30px; /* Adicionei 30px de margem direita entre os links */
+}
+
+.btn-primary {
+    margin-right: 30px; /* Inverti a margem de left para right */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
