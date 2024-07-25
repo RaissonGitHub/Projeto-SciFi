@@ -1,0 +1,59 @@
+CREATE DATABASE scifi;
+
+USE scifi;
+
+CREATE TABLE noticias (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  titulo VARCHAR(255) NOT NULL,
+  capa VARCHAR(255) NOT NULL,
+  conteudo TEXT NOT NULL,
+  imagens VARCHAR(255) NOT NULL,
+  documentos VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE artigos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT NOT NULL,
+  google_drive VARCHAR(255) NOT NULL,
+  research_gate VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE subgrupos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT NOT NULL,
+  cor VARCHAR(255) NOT NULL,
+  link VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE membros (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(255) NOT NULL,
+  sobrenome VARCHAR(255) NOT NULL,
+  atuacao VARCHAR(255) NOT NULL,
+  conteudo TEXT NOT NULL,
+  imagem VARCHAR(255) NOT NULL,
+  lattes VARCHAR(255) NOT NULL,
+  subgrupo_id INT NOT NULL,
+  FOREIGN KEY (subgrupo_id) REFERENCES subgrupos(id)
+);
+
+CREATE TABLE eventos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  titulo VARCHAR(255) NOT NULL,
+  data DATE NOT NULL,
+  descricao TEXT NOT NULL,
+  capa VARCHAR(255) NOT NULL,
+  conteudo TEXT NOT NULL,
+  imagens VARCHAR(255) NOT NULL,
+  documentos VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE participantes (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  evento_id INT NOT NULL,
+  membro_id INT NOT NULL,
+  FOREIGN KEY (evento_id) REFERENCES eventos(id),
+  FOREIGN KEY (membro_id) REFERENCES membros(id)
+);
