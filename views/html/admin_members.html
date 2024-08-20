@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciFi Project - Membros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color: #fff;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand admin-toggler" href="#">SciFi <span class="navbar-brand-admin">Admin</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="navbar-brand display-mobile m-0" href="#">SciFi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Participações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Membros</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-custom" type="button">Cadastrar</button>
+                </div>
+            </div>
+            <div class="admin-navbar">
+                <ul class="admin-nav">
+                    <li><a href="#" class="admin-logo">SciFi<span>Admin</span></a></li>
+                    <hr>
+                    <li><a href="#" class="admin-link">Notícias</a></li>
+                    <li><a href="#" class="admin-link">Artigos</a></li>
+                    <li><a href="#" class="admin-link active">Membros</a></li>
+                    <li><a href="#" class="admin-link">Participações</a></li>
+                    <li><a href="#" class="admin-link">Subgrupos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="admin-main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Artigos</a></li>
+                <li><a href="#" class="active">Membros</a></li>
+                <li><a href="#">Participações</a></li>
+                <li><a href="#">Subgrupos</a></li>
+            </ul>
+        </div>
+        <div class="admin-content">
+            <div class="filter-section">
+                <div>
+                    <h2>Filtro</h2>
+                    <button class="btn-add-news small">Adicionar um Membro</button>
+                </div>
+                
+                <div class="filter-options">
+                    <label><input type="radio" name="filter" value="date"> Data de Publicação</label>
+                    <label><input type="radio" name="filter" value="term"> Termo Livre</label>
+                    <label><input type="radio" name="filter" value="participant"> Participante</label>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </div>
+            <hr>
+            <div class="results-header">
+                <h2>Resultados</h2>
+                <button class="btn-add-news large">Adicionar um Membro</button>
+            </div>
+            <div class="results-section">
+                <div class="results-cards">
+                    <!-- Exemplos de cards -->
+                    <div class="result-card">
+                        <h3>Nome do Membro</h3>
+                        <p><strong>Atuação:</strong></p>
+                        <div class="card-buttons">
+                            <button class="btn-edit">Editar</button>
+                            <button class="btn-delete">Excluir</button>
+                        </div>
+                    </div>
+                    <!-- Mais cards aqui... -->
+                </div>
+                <div class="pagination">
+                    <button class="pagination-btn prev" disabled>Página Anterior</button>
+                    <button class="pagination-btn-n active">1</button>
+                    <button class="pagination-btn-n">2</button>
+                    <button class="pagination-btn-n">3</button>
+                    <span class="pagination-ellipsis">...</span>
+                    <button class="pagination-btn-n">10</button>
+                    <button class="pagination-btn next active">Próxima Página</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container-fluid d-flex justify-content-between align-items-center footer-top flex-wrap">
+            <div class="footer-logo">
+                SciFi
+            </div>
+            <div class="footer-text">
+                Segurança Cibernética<br> e Sistemas Ciber-Físicos
+            </div>
+        </div>
+        <div class="footer-center text-center">
+            <p>Cadastra-se para ficar por dentro das novidades</p>
+            <button class="btn btn-custom">Cadastrar</button>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>Copyright © 2024 SciFi</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/webformatation_admin.js"></script>
+
+</body>
+</html>
