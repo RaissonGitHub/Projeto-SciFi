@@ -1020,4 +1020,100 @@ body {
 
 
 /*Admin news end*/
+
+
+/*Articles start*/
+
+/* Background color specific to the articles page */
+.bg-light-grey {
+  background-color: #E1E1E4;
+}
+
+/* Main rectangle styling */
+.main-rectangle {
+  background-color: #010440;
+  width: 85%;
+  border-bottom: 8px solid #0433BF;
+  text-align: left;
+}
+
+.article-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 16px;
+  max-height: 250px;
+  width: 31%; /* Adjust for 3 cards per row */
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+/* Button styling */
+.btn-google, .btn-researchgate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.btn-google {
+  background-color: #0540F2;
+  color: #FFFFFF;
+}
+
+.btn-researchgate {
+  background-color: #00D0AE;
+  color: #FFFFFF;
+}
+
+.btn-google img, .btn-researchgate img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+  }
+
+  .card {
+      width: 100%;
+  }
+}
+
+/*Articles end*/
+
 /**/
