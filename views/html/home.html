@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciFi Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">SciFi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="navbar-brand display-mobile m-0" href="#">SciFi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Participações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Membros</a>
+                        </li>
+                        <button class="btn btn-primary btn-custom display-mobile" type="button">Cadastrar</button>
+                    </ul>
+                    <button class="btn btn-primary btn-custom" type="button">Cadastrar</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  
+    <main>
+        <!-- Primeiro Retângulo (Grupo SciFi) -->
+        <div class="intro-section d-none d-md-flex">
+            <div class="text-content">
+                <h1>Grupo SciFi</h1>
+                <p>Grupo dedicado à pesquisa em Segurança Cibernética e Sistemas Ciber-Físicos, focando em proteção de infraestruturas críticas e inovação tecnológica.</p>
+                <a href="#" class="btn btn-info">Saiba mais <span class="arrow">→</span></a>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imgs/img_home.jpg" class="d-block w-100 rounded-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/img_home.jpg" class="d-block w-100 rounded-image" alt="...">
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+                <div class="carousel-indicators-container">
+                    <div data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="carousel-indicator active"></div>
+                    <div data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="carousel-indicator"></div>
+                    <!-- Add more indicators as needed -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- Segundo Retângulo -->
+        <div class="info-section">
+            <div class="info-card">
+                <div class="circle">
+                    <i class="bi bi-calendar"></i>
+                    <a href="#" class="circle-text">Participações</a>
+                </div>
+                <div class="info-text">
+                    <p>Junte-se a nós em próximos eventos e conferências.</p>
+                    <a href="#" class="btn btn-info">Ver mais</a>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="circle">
+                    <i class="bi bi-file-earmark"></i>
+                    <a href="#" class="circle-text">Artigos</a>
+                </div>
+                <div class="info-text">
+                    <p>Explore nossas últimas publicações de pesquisas.</p>
+                    <a href="#" class="btn btn-info">Ver mais</a>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="circle">
+                    <i class="bi bi-people"></i>
+                    <a href="#" class="circle-text">Participantes</a>
+                </div>
+                <div class="info-text">
+                    <p>Conheça quem faz parte do nosso grupo de pesquisa.</p>
+                    <a href="#" class="btn btn-info">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Terceiro Retângulo (Outros Projetos) -->
+        <div class="projects-section">
+            <h2>Outros Projetos</h2>
+            <div class="project-card-container">
+                <div class="project-card" style="background-image: url('../imgs/robolab.jpg');">
+                    <div class="project-content">
+                        <p class="project-title">RoboLab</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('../imgs/iadev.jpg');">
+                    <div class="project-content">
+                        <p class="project-title">IA+Dev</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('../imgs/tingagames.jpg');">
+                    <div class="project-content">
+                        <p class="project-title">TingaGames</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Quarto Retângulo (Últimas Notícias) -->
+        <div class="news-section">
+            <h2>Últimas Notícias</h2>
+            <div class="news-card-container">
+                <div class="news-card">
+                    <img src="../imgs/tec.jpg" alt="Notícia 1" class="news-image">
+                    <p class="news-date">25 de Julho de 2024</p>
+                    <p class="news-description">Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="news-link">Ler mais <span class="arrow">→</span></a>
+                </div>
+                <div class="news-card">
+                    <img src="../imgs/tec2.jpg" alt="Notícia 2" class="news-image">
+                    <p class="news-date">18 de Julho de 2024</p>
+                    <p class="news-description">Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="news-link">Ler mais <span class="arrow">→</span></a>
+                </div>
+                <div class="news-card">
+                    <img src="../imgs/tec3.jpg" alt="Notícia 3" class="news-image">
+                    <p class="news-date">10 de Julho de 2024</p>
+                    <p class="news-description">Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="news-link">Ler mais <span class="arrow">→</span></a>
+                </div>
+                <div class="news-card">
+                    <img src="../imgs/tec4.jpg" alt="Notícia 4" class="news-image">
+                    <p class="news-date">2 de Julho de 2024</p>
+                    <p class="news-description">Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="news-link">Ler mais <span class="arrow">→</span></a>
+                </div>
+            </div>
+            <a href="#" class="btn btn-news">Mais Notícias</a>
+        </div>
+    </main>
+    
+    
+    <footer class="footer">
+        <div class="container-fluid d-flex justify-content-between align-items-center footer-top flex-wrap">
+            <div class="footer-logo">
+                SciFi
+            </div>
+            <div class="footer-text">
+                Segurança Cibernética<br> e Sistemas Ciber-Físicos
+            </div>
+        </div>
+        <div class="footer-center text-center">
+            <p>Cadastra-se para ficar por dentro das novidades</p>
+            <button class="btn btn-custom">Cadastrar</button>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>Copyright © 2024 SciFi</p>
+        </div>
+    </footer>
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/webformatation.js"></script>
+</body>
+</html>
