@@ -681,6 +681,116 @@ body {
 
 /*About end*/
 
+/*Members start*/
+
+.bg-custom {
+  background-color: #010440;
+}
+.bg-dark-blue {
+  background-color: #010326;
+}
+.bg-deep-blue {
+  background-color: #010440;
+}
+.bg-footer {
+  background-color: #020659;
+}
+.text-white {
+  color: #fff;
+}
+.title {
+  font-family: 'Gelion', sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.card-member {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.member-image {
+  width: 433px;
+  height: 546px;
+}
+.image-caption {
+  background-color: #2C46A6;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.member-name {
+  font-family: 'Gelion', sans-serif;
+  font-size: 40px;
+}
+.member-role, .member-lattes {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.member-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .title {
+      font-size: 48px;
+  }
+  .member-name {
+      font-size: 36px;
+  }
+  .member-role {
+      font-size: 20px;
+  }
+  .member-description {
+      font-size: 16px;
+  }
+  .member-image {
+      width: 100%;
+      height: auto;
+  }
+  .card-member {
+    padding: 15px;
+}
+.member-description {
+    margin-top: 10px;
+}
+.member-bar {
+    width: auto;
+    background-color: #fff;
+    height: 2px;
+    margin: 10px 0;
+}
+.member-image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+}
+.footer-logo, .footer-text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer-subscribe {
+    margin-bottom: 20px;
+}
+.footer-subscribe p, .footer-subscribe button {
+    font-size: 14px;
+}
+.footer-bottom p {
+    font-size: 12px;
+}
+.footer-logo {
+    flex-wrap: wrap;
+}
+}
+/*Members end */
+
 /*Admin news start*/
 
 /* General Styles */
