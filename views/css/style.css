@@ -737,6 +737,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
+/* Mobile Styles */
 @media (max-width: 768px) {
   .title {
       font-size: 48px;
