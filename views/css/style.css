@@ -683,108 +683,111 @@ body {
 
 /*Members start*/
 
-.navbar {
-  background-color: #020659;
-  height: 91px;
-}
-
-.navbar .navbar-brand.logo {
-  font-family: 'Kadwa', serif;
-  font-weight: bold;
-  font-size: 32px;
-  color: #ffffff;
-  margin-left: 108px;
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 15px;
-}
-
-.cadastrar {
-  background-color: #0540F2;
-  border-radius: 25px;
-  font-family: 'Gelion', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
-/* Conteúdo Principal */
-.titulo-principal {
-  font-family: 'Gelion', sans-serif;
-  font-size: 60px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.descricao-principal {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  margin-bottom: 40px;
-  max-width: 40%;
-}
-
-.img-principal {
-  width: 590px;
-  height: 378px;
-  margin-top: -100px; /* Ajuste para imagem mais acima */
-}
-
-/* Cards de Membros */
-.card-membro {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin: 40px 0;
-  width: 100%; /* Ocupar toda a largura */
-  color: #ffffff;
-}
-
-.bg-azul-escuro {
-  background-color: #010326;
-}
-
-.bg-azul-claro {
+.bg-custom {
   background-color: #010440;
 }
-
-.img-membro {
+.bg-dark-blue {
+  background-color: #010326;
+}
+.bg-deep-blue {
+  background-color: #010440;
+}
+.bg-footer {
+  background-color: #020659;
+}
+.text-white {
+  color: #fff;
+}
+.title {
+  font-family: 'Gelion', sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.card-member {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.member-image {
   width: 433px;
   height: 546px;
 }
-
-.card-conteudo {
-  flex: 1;
-  padding: 20px;
-}
-
-.rodape-card {
+.image-caption {
   background-color: #2C46A6;
+  color: #fff;
   text-align: center;
   padding: 8px;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  width: 433px;
-  height: 38px;
-  margin-top: -38px;
-  margin-bottom: 20px;
 }
-
-.barra-branca {
-  background-color: #ffffff;
-  height: 5px;
-  width: 100%; /* Ajustar a largura */
-  margin: 20px 0;
+.member-name {
+  font-family: 'Gelion', sans-serif;
+  font-size: 40px;
 }
-
-
-.barra-branca {
-  background-color: #ffffff;
+.member-role, .member-lattes {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
-
-
+.member-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .title {
+      font-size: 48px;
+  }
+  .member-name {
+      font-size: 36px;
+  }
+  .member-role {
+      font-size: 20px;
+  }
+  .member-description {
+      font-size: 16px;
+  }
+  .member-image {
+      width: 100%;
+      height: auto;
+  }
+  .card-member {
+    padding: 15px;
+}
+.member-description {
+    margin-top: 10px;
+}
+.member-bar {
+    width: auto;
+    background-color: #fff;
+    height: 2px;
+    margin: 10px 0;
+}
+.member-image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+}
+.footer-logo, .footer-text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer-subscribe {
+    margin-bottom: 20px;
+}
+.footer-subscribe p, .footer-subscribe button {
+    font-size: 14px;
+}
+.footer-bottom p {
+    font-size: 12px;
+}
+.footer-logo {
+    flex-wrap: wrap;
+}
+}
 /*Members end */
 
 /*Admin news start*/
