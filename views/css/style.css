@@ -703,31 +703,25 @@ body {
   font-size: 60px;
   font-weight: bold;
   color: #fff;
-  margin-left: 60px;
-  margin-bottom: 80px; /* Aumento do espaçamento abaixo do título */
+  margin-bottom: 80px; 
 }
 .description {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #fff;
-  margin-left: 60px;
 }
 .card-member {
-  display: flex;
-    flex-direction: row;
     padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    width: 100vw; /* Largura total da viewport */
-    max-width: 100%; /* Previne o estouro da página */
-    box-sizing: border-box; /* Inclui padding e borda na largura */
+}
+.image-container {
+  position: relative; 
 }
 .member-image {
-  border-radius: 39px; /* Bordas arredondadas */
+  border-radius: 39px; 
   width: 433px;
   height: 546px;
-  margin-right: 20px; /* Espaço entre a imagem e o texto */
-  margin-left: 30px; 
+  object-fit: cover;
+  position: relative; 
 }
 .image-caption {
   background-color: #2C46A6;
@@ -736,15 +730,21 @@ body {
   padding: 8px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  width: 100%; /* Mesma largura da imagem */
+  width: 434px; 
   padding: 5px 0;
-  border-radius: 0 0 39px 39px; /* Alinha com a borda da imagem */
+  border-radius: 0 0 39px 39px; 
+  position: absolute;
+  bottom: 0; 
+  left: 117px;
+}
+img[alt="João"]{
+  margin-left: 100px;
+  margin: 0;
 }
 .card-member .text-white {
-  text-align: justify; /* Texto justificado */
+  text-align: justify; 
   justify-content: center;
   padding: 0 15px;
-  
 }
 .member-name {
   text-align: center;
@@ -763,54 +763,57 @@ body {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .title {
-      font-size: 48px;
+    font-size: 48px;
+    margin-bottom: 40px; /* Ajuste para maior compatibilidade */
   }
+  .description {
+    font-size: 18px; /* Ajuste para dispositivos móveis */
+}
+.img-fluid.d-none.d-md-block {
+  display: none; /* Ocultar imagem para dispositivos móveis */
+}
+  .card-member .image-container {
+        text-align: center; /* Centralizar imagem e texto */
+    }
   .member-name {
-      font-size: 36px;
+    font-size: 36px;
+    font-weight: bold; /* Negrito para o nome do membro */
   }
-  .member-role {
+  .member-role, .member-lattes {
       font-size: 20px;
   }
   .member-description {
-      font-size: 16px;
+      font-size: 16px; /* Ajustar o tamanho da fonte da descrição */
   }
   .member-image {
-      width: 100%;
-      height: auto;
+    width: 300px; /* Reduzir a largura da imagem */
+    height: 326px; /* Reduzir a altura da imagem */
+    border-radius: 39px; /* Manter borda arredondada */
   }
   .card-member {
-    padding: 15px;
-}
-.member-description {
-    margin-top: 10px;
-}
-.member-bar {
-    width: auto;
-    background-color: #fff;
-    height: 2px;
-    margin: 10px 0;
-}
-.member-image {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: none;
-}
-.footer-logo, .footer-text {
+    padding: 10px;
+    margin-bottom: 20px; /* Espaçamento entre cards */
+    background-color: #010326;
+  }
+  .card-member .row {
+    flex-direction: column-reverse; /* Inverte a ordem para foto primeiro */
+  }
+  .image-caption {
+    background-color: #2C46A6;
+    color: #fff;
     text-align: center;
-    margin-bottom: 10px;
-}
-.footer-subscribe {
-    margin-bottom: 20px;
-}
-.footer-subscribe p, .footer-subscribe button {
-    font-size: 14px;
-}
-.footer-bottom p {
-    font-size: 12px;
-}
-.footer-logo {
-    flex-wrap: wrap;
-}
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Ajuste do tamanho da fonte do caption */
+    border-radius: 0 0 39px 39px;
+    position: relative;
+    width: 300px; /* Ajuste da largura do caption */
+    margin: 0 auto; /* Centralizar caption */
+  }
+  .text-white {
+    text-align: center; /* Centralizar texto */
+    padding: 10px; /* Ajuste do padding para mobile */
+  }
 }
 /*Members end */
 
