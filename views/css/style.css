@@ -1348,4 +1348,151 @@ img[alt="João"]{
 
 /*events end*/
 
+/*About event start*/
+
+.event-title {
+  font-family: 'Gelion', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.event-divider {
+  width: 720px;
+  border: 1px solid #000000;
+}
+
+.event-date, .event-location {
+  font-size: 20px;
+  color: #000000;
+}
+
+.event-description {
+  max-width: 525px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.event-cover {
+  display: flex;
+  flex-direction: column; /* Ajuste para coluna */
+}
+
+.cover-image {
+  width: 400px;
+  height: 300px;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
+.event-content p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 32px;
+}
+
+.event-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.event-image {
+  width: 340px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.participants p, .documents a {
+  font-size: 20px;
+  color: #000000;
+}
+
+.documents a {
+  color: #0540F2;
+  text-decoration: none;
+}
+
+.documents a:hover {
+  text-decoration: underline;
+}
+.documents {
+  margin-bottom: 40px; /* Ajuste o valor conforme necessário */
+}
+/* Estilo da Aba de Navegação */
+.event-news-section {
+  color: #020659;
+  padding: 0 20px;
+  position: absolute;
+  right: 200px;
+}
+
+
+.news-header {
+  width: 228px;
+  background-color: #000229;
+  color: #FFFFFF;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid #FFFFFF;
+}
+
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-content {
+  background-color: #020659;
+  padding: 16px;
+  width: 228px;
+}
+
+.news-item {
+  margin-bottom: 16px;
+}
+
+.news-item-title {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.news-item-date {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+/* Estilo Responsivo para Mobile */
+@media (max-width: 768px) {
+  .event-divider {
+      width: 100%;
+  }
+
+  .cover-image {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 16px;
+  }
+
+  .event-images {
+      flex-direction: column;
+  }
+
+  .news-section {
+      display: none;
+  }
+}
+
+/*About event end*/
+
 /**/
