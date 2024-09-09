@@ -1475,4 +1475,155 @@ body {
 
 /*About event end*/
 
+/*Login start*/
+
+
+.login-background {
+  background-color: #010440;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.login-container {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  padding: 40px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  font-family: 'Kadwa', serif;
+  font-size: 64px;
+  color: #010440;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.login-form {
+  width: 100%;
+  text-align: right;
+}
+
+.login-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-field:last-child {
+  margin: 0;
+}
+
+.login-field svg {
+  margin-right: 10px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  align-self: flex-end;
+  font-size: 12px;
+  color: #020659;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.login-button {
+  width: 80%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #020659;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #010440;
+}
+
+.login-or {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.google-login {
+  width: 80%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #020659;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.google-login:hover {
+  background-color: #010440;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.register-link {
+  font-size: 16px;
+  text-align: center;
+}
+
+.register-link-highlight {
+  color: #1D2069;
+  text-decoration: none;
+}
+
+.register-link-highlight:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .login-container {
+      width: 100%;
+      padding: 20px;
+      border-radius: 20px; /* Mantendo bordas arredondadas no mobile */
+  }
+
+  .login-title {
+      font-size: 48px;
+  }
+}
+
+/*Login end*/
+
 /**/
