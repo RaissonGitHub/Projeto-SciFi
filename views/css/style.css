@@ -617,11 +617,11 @@ body {
     flex-direction: row-reverse;
 }
 
-.card-img, .card-text {
+.card-img-about, .card-text-about {
     width: 50%;
 }
 
-.card-left .card-text {
+.card-left .card-text-about {
     background-color: #010326;
     color: #ffffff;
     display: flex;
@@ -630,7 +630,7 @@ body {
     padding: 20px;
 }
 
-.card-right .card-text {
+.card-right .card-text-about {
     background-color: #ffffff;
     color: #000000;
     display: flex;
@@ -639,7 +639,7 @@ body {
     padding: 20px;
 }
 
-.card-img img {
+.card-img-about img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -660,11 +660,11 @@ body {
         margin-bottom: 20px;
     }
 
-    .card-img, .card-text {
+    .card-img-about, .card-text-about {
         width: 100%;
     }
 
-    .card-text {
+    .card-text-about {
         background-color: #ffffff !important;
         color: #000000 !important;
         font-size: 12px;
@@ -673,7 +673,7 @@ body {
         border-bottom-right-radius: 10px;
     }
 
-    .card-img img {
+    .card-img-about img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -1173,7 +1173,7 @@ body {
   width: 85%;
 }
 
-.card {
+.card-article {
   background-color: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -1187,12 +1187,6 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
-}
-
-.card p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
   color: #000000;
 }
 
@@ -1266,7 +1260,7 @@ body {
 .participation-card-link {
   text-decoration: none;
   color: inherit;
-  width: 350px;
+  width: 31%;
   height: 300px;
   margin-bottom: 16px;
 }
