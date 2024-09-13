@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Notícias</title>
+    <title>Cadastro de Membros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -59,53 +59,51 @@
             </div>
         </nav>
     </header>
-    <main class="add-news-main">
-        <div class="form-container">
-            <h1>Adicionar Notícia</h1>
+    <main class="add-member-main">
+        <div class="form-member-container">
+            <h1>Adicionar Membro</h1>
             <hr>
             <form>
-                <div class="form-group row">
-                    <label for="title" class="col-sm-2 col-form-label">Título:</label>
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" id="title" placeholder="Digite o título">
-                    </div>
+                <div class="form-member-group">
+                    <label for="first-name">Nome:</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="Digite o nome">
                 </div>
-                
-                <div class="form-group row">
-                    <label for="cover" class="col-sm-2 col-form-label">Capa:</label>
-                    <div class="col-sm-12">
-                        <input type="file" class="form-control" id="cover">
-                    </div>
+                <div class="form-member-group">
+                    <label for="last-name">Sobrenome:</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Digite o sobrenome">
                 </div>
-                
-                <div class="form-group row">
-                    <label for="content" class="col-sm-2 col-form-label">Conteúdo:</label>
-                    <div class="col-sm-12">
-                        <textarea class="form-control" id="content" rows="5" placeholder="Digite o conteúdo"></textarea>
-                    </div>
+                <div class="form-member-group">
+                    <label for="role">Atuação:</label>
+                    <input type="text" class="form-control" id="role" placeholder="Digite a atuação">
                 </div>
-                
-                <div class="form-group row">
-                    <label for="images" class="col-sm-2 col-form-label">Imagens:</label>
-                    <div class="col-sm-12">
-                        <input type="file" class="form-control" id="images" multiple>
-                    </div>
+                <div class="form-member-group">
+                    <label for="content">Conteúdo:</label>
+                    <textarea class="form-control" id="content" rows="4" placeholder="Digite o conteúdo"></textarea>
                 </div>
-                
-                <div class="form-group row">
-                    <label for="documents" class="col-sm-2 col-form-label">Documentos:</label>
-                    <div class="col-sm-12">
-                        <input type="file" class="form-control" id="documents" multiple>
-                    </div>
+                <div class="form-member-group">
+                    <label for="image">Imagem:</label>
+                    <input type="file" class="form-control" id="image">
+                </div>
+                <div class="form-member-group">
+                    <label for="lattes">Lattes:</label>
+                    <input type="text" class="form-control" id="lattes" placeholder="Digite o link do Lattes">
+                </div>
+                <div class="form-member-group">
+                    <label for="subgroup">Selecione um subgrupo:</label>
+                    <select id="subgroup" class="form-control">
+                        <option value="" disabled selected>Selecione um subgrupo</option>
+                        <option value="subgroup1">Subgrupo 1</option>
+                        <option value="subgroup2">Subgrupo 2</option>
+                        <option value="subgroup3">Subgrupo 3</option>
+                        <!-- Adicione mais opções conforme necessário -->
+                    </select>
                 </div>
                 <div class="form-group row justify-content-between text-center">
                     <div class="col-sm-5">
-                        <button type="submit" class="btn btn-primary btn-block add-btn"
-                            style="background-color: #0540F2; border-radius: 25px;">Salvar<br>informações</button>
+                        <button type="submit" class="btn btn-primary btn-block add-btn" style="background-color: #0540F2; border-radius: 25px;">Salvar<br>informações</button>
                     </div>
                     <div class="col-sm-5">
-                        <a href="index.html" class="btn btn-secondary btn-block add-btn"
-                            style="background-color: #99999A; color: #000000; border-radius: 25px;">Voltar</a>
+                        <a href="index.html" class="btn btn-secondary btn-block add-btn" style="background-color: #99999A; color: #000000; border-radius: 25px;">Voltar</a>
                     </div>
                 </div>
             </form>
@@ -135,6 +133,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="../js/webformatation_admin.js"></script>
+
 </body>
 
 </html>

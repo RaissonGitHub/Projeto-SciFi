@@ -48,7 +48,7 @@ body {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .navbar-toggler {
       border: none;
       outline: none;
@@ -1007,7 +1007,7 @@ body {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .search-bar input{
     width: 300px;
   }
@@ -1415,7 +1415,7 @@ body {
 }
 
 
-.news-header {
+.news-header-aside {
   width: 228px;
   background-color: #000229;
   color: #FFFFFF;
@@ -1426,7 +1426,7 @@ body {
   border-top: 4px solid #FFFFFF;
 }
 
-.news-title {
+.news-title-aside {
   font-size: 20px;
   font-weight: bold;
 }
@@ -1437,7 +1437,7 @@ body {
   width: 228px;
 }
 
-.news-item {
+.news-item-aside {
   margin-bottom: 16px;
 }
 
@@ -1878,7 +1878,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  padding: 10px 0;
 }
 
 .form-container {
@@ -1936,7 +1936,7 @@ button, a.btn {
   padding: 10px 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .form-container {
     width: 90%;
     padding: 10px;
@@ -1974,7 +1974,8 @@ button, a.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 110vh;
+  min-height: 100vh;
+  padding: 10px 0;
 }
 
 .form-container {
@@ -2035,7 +2036,7 @@ button, a.btn {
   padding: 10px 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .form-container {
       width: 90%;
       padding: 10px;
@@ -2059,3 +2060,318 @@ button, a.btn {
 }
 
 /*Add event end*/
+
+/*Add members start*/
+
+.add-member-main {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.form-member-container {
+  background-color: #FFFFFF;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-member-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.form-member-container hr {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+form {
+  width: 90%;
+}
+
+.form-member-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.form-member-group label {
+  font-size: 16px;
+  color: #000000;
+}
+
+.form-member-control {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button, a.btn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.btn-member-primary {
+  background-color: #0540F2;
+  border-radius: 25px;
+  color: #FFFFFF;
+}
+
+.btn-member-secondary {
+  background-color: #99999A;
+  border-radius: 25px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .form-member-container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .form-member-group {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .form-member-group label {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 5px;
+  }
+
+  .form-member-control {
+      width: 100%;
+  }
+
+}
+/*Add members end*/
+
+/*Add articles start*/
+
+.add-article-main {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.form-container {
+  background-color: #FFFFFF;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.form-container hr {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+form {
+  width: 90%;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #000000;
+}
+
+input[type="text"], input[type="file"], textarea, select, .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button, a.btn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+@media (max-width: 568px) {
+  .form-container {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .form-group.row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group.row .col-sm-2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .form-group.row .col-sm-12 {
+    width: 100%;
+  }
+
+  .add-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/*Add articles end*/
+
+/*Add subgroup start*/
+
+
+.add-subgroup-main {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.form-container-subgroup {
+  background-color: #FFFFFF;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container-subgroup h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.form-container-subgroup hr {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+form {
+  width: 90%;
+}
+
+.form-group-subgroup {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.label-subgroup {
+  font-size: 16px;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="color"],
+textarea,
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+a.btn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.add-btn-subgroup {
+  background-color: #0540F2;
+  border-radius: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+a.add-btn-subgroup {
+  background-color: #99999A;
+  color: #000000;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 568px) {
+  .form-container-subgroup {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+  }
+
+  .form-group-subgroup.row {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .form-group-subgroup.row .col-form-label-subgroup {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 5px;
+  }
+
+  .form-group-subgroup.row .col-subgroup {
+      width: 100%;
+  }
+
+  .add-btn-subgroup {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+/*Add subgroup end*/

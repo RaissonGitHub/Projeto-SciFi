@@ -14,9 +14,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">SciFi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand admin-toggler" href="#">SciFi <span class="navbar-brand-admin">Admin</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,10 +41,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Membros</a>
                         </li>
-                        <button class="btn btn-primary btn-custom display-mobile" type="button">Cadastrar</button>
                     </ul>
                     <button class="btn btn-primary btn-custom" type="button">Cadastrar</button>
                 </div>
+            </div>
+            <div class="admin-navbar">
+                <ul class="admin-nav">
+                    <li><a href="#" class="admin-logo">SciFi<span>Admin</span></a></li>
+                    <hr>
+                    <li><a href="#"class="admin-link">Notícias</a></li>
+                    <li><a href="#"class="admin-link">Artigos</a></li>
+                    <li><a href="#"class="admin-link">Membros</a></li>
+                    <li><a href="#"class="admin-link">Participações</a></li>
+                    <li><a href="#"class="admin-link">Subgrupos</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -56,50 +65,66 @@
             <form>
                 <div class="form-group row">
                     <label for="title" class="col-sm-2 col-form-label">Título:</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <input type="text" class="form-control" id="title" placeholder="Digite o título">
                     </div>
                 </div>
+                
                 <div class="form-group row">
                     <label for="date" class="col-sm-2 col-form-label">Data:</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <input type="date" class="form-control" id="date">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="description">Descrição:</label>
-                    <textarea class="form-control" id="description" rows="3" placeholder="Digite a descrição"></textarea>
+                
+                <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">Descrição:</label>
+                    <div class="col-sm-12">
+                        <textarea class="form-control" id="description" rows="3" placeholder="Digite a descrição"></textarea>
+                    </div>
                 </div>
+                
                 <div class="form-group row">
                     <label for="cover" class="col-sm-2 col-form-label">Capa:</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <input type="file" class="form-control" id="cover">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="content">Conteúdo:</label>
-                    <textarea class="form-control" id="content" rows="5" placeholder="Digite o conteúdo"></textarea>
+                
+                <div class="form-group row">
+                    <label for="content" class="col-sm-2 col-form-label">Conteúdo:</label>
+                    <div class="col-sm-12">
+                        <textarea class="form-control" id="content" rows="5" placeholder="Digite o conteúdo"></textarea>
+                    </div>
                 </div>
+                
                 <div class="form-group row">
                     <label for="images" class="col-sm-2 col-form-label">Imagens:</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <input type="file" class="form-control" id="images" multiple>
                     </div>
                 </div>
+                
                 <div class="form-group row">
                     <label for="documents" class="col-sm-2 col-form-label">Documentos:</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <input type="file" class="form-control" id="documents" multiple>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="participants" class="col-sm-2 col-form-label">Adicionar Participante:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="participants" placeholder="Digite o nome do participante">
+                    <label for="participants">Adicionar Participante:</label>
+                    <div class="col-sm-12">
+                        <input list="participant-list" class="form-control" id="participants" placeholder="Digite o nome do participante">
                     </div>
+                    <datalist id="participant-list">
+                        <option value="Nome Participante 1">
+                        <option value="Nome Participante 2">
+                        <option value="Nome Participante 3">
+                        <!-- Adicione mais opções conforme necessário -->
+                    </datalist>
                 </div>
                 <div class="form-group" id="participants-container">
-                    <!-- Checkbox participants will be added here -->
+                    <!-- Aqui serão adicionados os checkboxes dos participantes -->
                 </div>
                 <div class="form-group text-center">
                     <button type="button" class="btn btn-danger" id="delete-participant" style="background-color: #F22105; border-radius: 25px; color: #000000; font-weight: bold;">Excluir participante</button>
@@ -138,40 +163,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="../js/webformatation.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    const participantsInput = document.getElementById('participants');
-    const participantsContainer = document.getElementById('participants-container');
-    const deleteButton = document.getElementById('delete-participant');
-
-    participantsInput.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' && participantsInput.value.trim() !== '') {
-            const participantName = participantsInput.value.trim();
-            const participantId = `participant-${participantName.replace(/\s+/g, '-').toLowerCase()}`;
-
-            if (!document.getElementById(participantId)) {
-                const div = document.createElement('div');
-                div.className = 'form-check';
-                div.innerHTML = `
-                    <input class="form-check-input" type="checkbox" value="${participantName}" id="${participantId}">
-                    <label class="form-check-label" for="${participantId}">${participantName}</label>
-                `;
-                participantsContainer.appendChild(div);
-                participantsInput.value = '';
-            }
-            e.preventDefault();
-        }
-    });
-
-    deleteButton.addEventListener('click', function () {
-        const checkboxes = participantsContainer.querySelectorAll('input[type="checkbox"]:checked');
-        checkboxes.forEach(checkbox => {
-            participantsContainer.removeChild(checkbox.parentElement);
-        });
-    });
-});
-    </script>
+    <script src="../js/webformatation_admin.js"></script>
+    
 </body>
 
 </html>
